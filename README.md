@@ -1,8 +1,10 @@
 # esdes-zerrel-deborah.github.io
 Un blog sur les voyages avec:
   des photos
-  des onglets de renvoi (pour les réseaux sociaux)
+  des onglets de renvoi (pour les réseaux sociaux)et pour les différents articles
   des petites phrases résumant chaque article en dessous de chaque miniature
+  animation sur mon titre 
+  bandeau avec les articles "Mes derniers voyages autour du monde"
   
 Références: 
   blog de voyage: https://oiseaurose.com/
