@@ -5,6 +5,8 @@ Un blog sur les voyages avec:
   des petites phrases résumant chaque article en dessous de chaque miniature
   animation sur mon titre 
   bandeau avec les articles "Mes derniers voyages autour du monde"
+  Ma cible est plutôt les passionnés du voyage.
+ 
   
 Références: 
   blog de voyage: https://oiseaurose.com/
