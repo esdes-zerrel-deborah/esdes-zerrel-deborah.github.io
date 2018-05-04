@@ -29,7 +29,7 @@ header h1 {
     padding: 20px 7px;
     cursor: pointer;
     transition: all 0.3s;
-    animation-delay: 3s;
+    animation: enter 3s ease-in-out infinite alternate;
 }
 .fa-arrow-circle-down {
     font-size: 30px;
@@ -41,6 +41,7 @@ header h1 {
     font-size: 60px;
     cursor: pointer;
     
+    
 
 
 }
@@ -49,6 +50,13 @@ header h1:hover{
     color:rgb(250, 250, 250);
 }
 
+h1{
+    text-align: center;
+    margin: 0;
+    padding: 50px 15px;
+    color: rgb(173, 135, 209);
+
+}
 section{
     display: flex;
     flex-direction: row;
@@ -58,43 +66,44 @@ section{
     min-height: 100%;
     background-color: white;
 }
-article{
-    display: inherit;
-    flex-direction: column;
-    width: 10%;
+section a {
+    width: 23%;
     margin: 80px;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 250px;
+    
     padding: 30px;
     background-color: rgb(238, 230, 230);
+    background-size: cover;
     text-align: center;
     margin-top: 150px;
 }
 
 #asie {
     background-image: url(img/chine.jpg);
-    background-size: cover;
-    width: 300px;
-    height: 250px;
 }
 
 #europe {
     background-image: url(img/portugal.jpg);
     background-size: cover;
-    width: 300px;
-    height: 250px;
+    
 }
 
 #afrique {
     background-image: url(img/maroc.jpg);
     background-size: cover;
-    width: 300px;
-    height: 250px;
+   
 }
 
 #amerique {
     background-image: url(img/bresil.jpg);
     background-size: cover;
-    width: 300px;
-    height: 250px;
+    
 }
 
 article h2{
@@ -113,3 +122,42 @@ article:hover {
 position fix #footer {
     top: 0;
 }
+
+footer{
+    background-color: rgb(170, 172, 172);
+    height: 20%;
+    width: 100%;
+}
+
+/* RESPONSIVE */
+/* mobile */
+@media screen and (max-width: 600px) {
+    section{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        min-height: 100%;    
+    }
+    article{
+        width: 80%;
+    }
+}
+
+/* tablet */
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    article{
+        width: 37%;
+    }
+}
+
+/**ANIMATION**/
+@keyframes enter{
+    from {
+        opacity:0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+    

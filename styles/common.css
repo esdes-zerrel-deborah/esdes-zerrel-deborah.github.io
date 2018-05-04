@@ -1,0 +1,19 @@
+html, body {
+    margin: 0;
+}
+header {
+    background-color: rgb(238, 197, 197);
+    padding: 100px;
+}
+
+#btn-home {
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#btn-home:hover {
+    transform: scale(1.2);
+}
