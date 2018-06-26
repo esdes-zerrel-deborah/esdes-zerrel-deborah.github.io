@@ -2,33 +2,37 @@
     box-sizing: border-box;
 }
 
+body iframe {
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: space-around;
+}
 header {
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: rgb(176, 214, 144);
+    background-color: rgb(238, 197, 197);
 }
-
 section {
     padding: 4%;
     text-align: justify;
     display: flex;
     align-items: center;
     flex-direction: column;
-} 
-section table {
+}
+
+section p {
     width: 80%;
-    background-color:rgb(225, 243, 217);
 }
 
 footer{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: rgb(176, 214, 144);
+    background-color: rgb(238, 197, 197);
     width: 100%;
     padding: 15px;
 }
-
 footer a{
     text-align: center;
     align-items: center;
