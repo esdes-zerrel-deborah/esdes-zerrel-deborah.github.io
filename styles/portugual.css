@@ -18,6 +18,7 @@ section {
 section table {
     width: 80%;
     background-color:rgb(225, 243, 217);
+    padding: 20px;
 }
 
 footer{
