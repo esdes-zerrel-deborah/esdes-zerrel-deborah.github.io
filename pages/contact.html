@@ -1,86 +1,94 @@
-<!Doctype html>
+<!doctype html>
+<html lang=fr>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="utf-8/">
-        <link rel="stylesheet" href="../styles/common.css"/>
-        <link rel="stylesheet" href="../styles/contact.css"/>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120144150-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-120144150-1');
-        </script>
-    </head>
 
-    <body>
-            <header>
-                <a href="../index.html">
-                    <button id="btn-home">Home</button>
-                </a>
-            </header>
-            <section2>
-                <div id="main-container"> <!-- The main container element -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8/">
+    <link rel="stylesheet" href="../styles/common.css"/>
+    <link rel="stylesheet" href="../styles/contact.css"/>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120144150-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-120144150-1');
+    </script>
+</head>
 
-                    <div id="form-container"> <!-- The form container -->
+<body>
+    <header>
+        <a href="../index.html">
+            <button id="btn-home">Home</button>
+        </a>
+    </header>
+    <section2>
+        <div id="main-container"> <!-- The main container element -->
+
+        <div id="form-container"> <!-- The form container -->
                     
-                    <h4>ME CONTACTER</h4> <!-- Headings -->
-                    <h2>Vous pouvez me contacter via ce formulaire</h2>
+            <h4>ME CONTACTER</h4> <!-- Headings -->
+            <h2>Vous pouvez me contacter via ce formulaire</h2>
+            <p>Nous pourrons partager nos expériences de voyages et vous pourrez me poser toutes les questions que vous
+            souhaitez sur les démarches à suivre pour faire un tour du monde... J'aime échanger avec les gens, je suis très ouverte
+            d'esprit et je serai ravie de vous éclairer sur le domaine du voyage. J'habite à Lyon : nous pourrons donc nous rencontrer,
+            si vous le souhaitez, dans un café ou un autre lieu convivial.
+            Notre communauté grandit de jours en jours, vous pourrez partagez vos photos et vidéos que je pourrai diffuser sur mon blog.
+            </p>
                     
-                    <form id="contact-form" name="contact-form" method="post" action="submit.php">    <!-- The form, sent to submit.php -->
+            <form id="contact-form" name="contact-form" method="post" action="submit.php">    <!-- The form, sent to submit.php -->
                     
-                    <table width="100%" border="0" cellspacing="0" cellpadding="5">
+                <table width="100%" border="0" cellspacing="0" cellpadding="5">
                     
                     <tr>
-                    <td width="18%"><label for="Nom">Nom</label></td> <!-- Text label for the input field -->
-                    <td width="45%"><input type="text" class="validate[required,custom[onlyLetter]]" name="name" id="name" value="" /></td>
-                    <!-- We are using session to prevent losing data between page redirects -->
-                    
-                    <td width="37%" id="errOffset">&nbsp;</td>
+                        <td width="18%"><label for="Nom">Nom</label></td> <!-- Text label for the input field -->
+                        <td width="45%"><input type="text" class="validate[required,custom[onlyLetter]]" name="name" id="name" value="" /></td>
+                        <!-- We are using session to prevent losing data between page redirects -->
+                        <td width="37%" id="errOffset">&nbsp;</td>
                     </tr>
                     
                     <tr>
-                    <td><label for="email">Email</label></td>
-                    <td><input type="text" class="validate[required,custom[email]]" name="email" id="email" value="" /></td>
-                    <td>&nbsp;</td>
+                        <td><label for="email">Email</label></td>
+                        <td><input type="text" class="validate[required,custom[email]]" name="email" id="email" value="" /></td>
+                        <td>&nbsp;</td>
                     </tr>
                     
                     <tr>
-                    <td><label for="sujet">Sujet</label></td>
+                        <td><label for="sujet">Sujet</label></td>
                     
-                    <!-- This select is being replaced entirely by the jqtransorm plugin -->
+                        <!-- This select is being replaced entirely by the jqtransorm plugin -->
                     
-                    <td><select name="subject" id="subject">
-                    <option value="" selected="selected"> - Choose -</option>
-                    <option value="Question">Question</option>
-                    <option value="Business proposal">Business proposal</option>
-                    <option value="Advertisement">Advertising</option>
-                    <option value="Prendre rendez-vous">Prendre rendez-vous</option>
-                    </select>          </td>
-                    <td>&nbsp;</td>
+                        <td><select name="subject" id="subject">
+                        <option value="" selected="selected"> - Choose -</option>
+                        <option value="Question">Question</option>
+                        <option value="Business proposal">Business proposal</option>
+                        <option value="Advertisement">Advertising</option>
+                        <option value="Prendre rendez-vous">Prendre rendez-vous</option>
+                        </select>          </td>
+                        <td>&nbsp;</td>
                     </tr>
                     
                     <tr>
-                    <td valign="top"><label for="message">Message</label></td>
-                    <td><textarea name="message" id="message" class="validate[required]" cols="35" rows="5"></textarea></td>
-                    <td valign="top">&nbsp;</td>
+                        <td valign="top"><label for="message">Message</label></td>
+                        <td><textarea name="message" id="message" class="validate[required]" cols="35" rows="5"></textarea></td>
+                        <td valign="top">&nbsp;</td>
                     </tr>
                     
                     
                     
                     <tr>
-                    <td valign="top">&nbsp;</td>
-                    <!-- These input buttons are being replaced with button elements -->
-                    <td colspan="2"><input type="submit" name="button" id="button" value="Submit" />
-                    <input type="reset" name="button2" id="button2" value="Reset" />
+                        <td valign="top">&nbsp;</td>
+                        <!-- These input buttons are being replaced with button elements -->
+                        <td colspan="2"><input type="submit" name="button" id="button" value="Submit" />
+                        <input type="reset" name="button2" id="button2" value="Reset" />
         
                     
-                    <!-- $str contains the error string if the form is used with JS disabled -->
+                        <!-- $str contains the error string if the form is used with JS disabled -->
                     
-                    <img id="loading" src="img/ajax-load.gif" width="16" height="16" alt="loading" />
-                    <!-- the rotating gif animation, hidden by default -->
+                        <img id="loading" src="img/ajax-load.gif" width="16" height="16" alt="loading" />
+                        <!-- the rotating gif animation, hidden by default -->
                     </td></tr>
                     
                     </table>
@@ -89,11 +97,11 @@
                                   
                     </div>
                     </div>   
-        </section2>
-    </body>
+    </section2>
+</body>
 
-    <footer>
-        <a href="contact.html">
-            contactez-moi
-        </a>
-    </footer>
+<footer>
+    <a href="contact.html">
+        contactez-moi
+    </a>
+</footer>

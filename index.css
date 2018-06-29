@@ -15,7 +15,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: @import url('https://fonts.googleapis.com/css?family=Roboto');
+    font-family: 'Times New Roman', Times, serif;
 }
 
 header h1 {
